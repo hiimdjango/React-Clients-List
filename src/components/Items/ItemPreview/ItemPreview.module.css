@@ -1,0 +1,43 @@
+.ItemPreview {
+    text-align: center;
+    overflow: scroll;
+    max-height: 480px;
+}
+
+.ItemPreview img {
+    border-radius:50%;
+    height: 100px;
+    width: 100px;
+}
+
+.ItemPreview h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color:#438bdd;
+    margin:20px;
+}
+
+.ItemPreview address {
+    font-size: 12px;
+}
+
+.Website a {
+    text-decoration: none;
+    color:#438bdd;
+}
+.Website a:visited {
+    text-decoration:none;
+    color:#438bdd;
+}
+
+.Email a {
+    text-decoration:none;
+    font-style: italic;
+    color:black;
+}
+.Email a:visited {
+    text-decoration:none;
+}
+.Overview {
+    letter-spacing: 1px;
+}

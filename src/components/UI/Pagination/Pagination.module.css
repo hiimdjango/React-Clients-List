@@ -1,0 +1,30 @@
+.Pagination {
+    text-align: center;
+    margin:30px;
+}
+
+.Pagination button {
+    padding:8px;
+    margin: 8px;
+    border-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+button:disabled,
+button[disabled]:hover{
+    background-color: #cccccc;
+    color: #666666;
+    cursor:not-allowed;
+}
+
+.Clickable:hover {
+    background: rgba(0,0,0,0.5);
+    color: white;
+}

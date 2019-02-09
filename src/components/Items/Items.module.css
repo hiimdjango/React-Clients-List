@@ -1,0 +1,8 @@
+.Items {
+    text-align: center;
+}
+
+.Items h1 {
+    color:Green;
+    font-size: calc(10px + 2vmin);
+}

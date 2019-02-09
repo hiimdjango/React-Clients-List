@@ -1,0 +1,42 @@
+Here's the project's steps explained one by one till the final result! 
+
+First thing first planning project structure, stateful and stateless components and define state
+Planning is never 100% accurate some components will be added later on need
+Fetching Api data with axios in App.js and update the state 
+since Endpoint changes with pagination i did a function that takes the endpoint as parameter 
+ComponentWillMount call the fetch data function with the initial state as parameter.
+Now we focus on the Items component which recieves the data fetched from the Api as props
+Basically we map through the data array and we render Item component which will recieve his own props from the fetched data.
+Working on a bit on the CSS for visiual improvment
+Now we need have our 50 Items displayed on the screen.
+Then working on the pagination Component and creating the 2 functions that handles previous and next pagination and passing them
+as props to the Pagination component.
+The logic here is everytime we time we click the button we update our state with new endpoint and render the nextPageEndpoint data
+Now we got our pagination working and content rendered correctly to the screen, I could also do with ComponentWillUpdate and avoid calling the fetchData function 
+but it's not a good practice to update the state in the ComponentWillUpdate Hook, i can still use a condition statement to avoid the infinite loop but if we have
+another way we go with it. Also note that the axios.get is an async function so that way we get a better clean and neat piece of code.
+Last thing to do is a preview Modal when clicking the item Component 
+Let's focus on the ItemPreview Component, here we need to fetch data from our endpoint+id 
+so i set the function that recieves the id and update it in the state also update showModal and preview.
+Same logic, when preview is true render ItemPreview component , since it has a ComponentDidMount it will fetch the data with the new id that is being passed to the state
+// Check the code at the same time so you can better understand
+Then i work a bit on the final CSS so we have a much better design and user experience 
+I tried to do it as much responsive as i could with the time that i had but didn't add mediaqueries, it should be working fine on a phone too, maybe some mediaqueries
+should be added for an optimal result
+
+As you can notice i always handle the errors manually to always let the user know what's going on there
+
+3) Describing the steps. 
+First i'd like to tell you that i pretty much enjoyed coding this small project and working with the Api that you provided, you can see that i always use 
+the same logic everywhere for a better and more maintanable code, So to add the filter i would use the same logic too , i will first fetch data from the Api the link that you provided for stockExchange
+render checkboxes with the values and everytime a checkbox is selected i add the query parameters with the value to the endpoint and render the elements with the filters selected
+I will probably create another component that i'll call filters where i render each filter and add an event listener.
+
+
+PS: You will probably notice that i divide into too many components, i think this is the best practice to easily maintain the code, the power of react except the fact that
+it makes 2 copy of the DOM is that you can create reusuable components , and that's the spirit when coding with react, you always try to create as much reusuable components as possible,
+i am using that logic to develop a very nice project, so if we meet i'll talk to you about it! 
+
+
+Thank you for you time! Look forward to meet you soon.
+Ahmed Bendaya
